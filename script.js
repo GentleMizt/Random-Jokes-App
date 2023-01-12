@@ -1,9 +1,9 @@
     let btn = document.querySelector('.click');
     let container = document.querySelector('.container')
 
-    const getJoke = () =>{
+    const getJoke = async() =>{
 
     }
-    
+
     btn.addEventListener('click', );
 
