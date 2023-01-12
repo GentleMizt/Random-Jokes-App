@@ -5,7 +5,7 @@
         try{
             let data = await (await fetch('https://api.chucknorris.io/jokes/random')).json();
             let joke = data.value;
-           
+            container.textContent = joke;
         } catch(error){
             console.log(error);
         }
