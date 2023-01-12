@@ -3,13 +3,14 @@
 
     const getJoke = async() =>{
         try{
-            fetch('https://api.chucknorris.io/jokes/random');
-            
+            let data = await (await fetch('https://api.chucknorris.io/jokes/random')).json();
+            let joke = data.value;
+           
         } catch(error){
             console.log(error);
         }
     }
 
-    btn.addEventListener('click', );
+    btn.addEventListener('click', getJoke);
 
     
