@@ -12,6 +12,7 @@ body{
 }
 .container{
     background-color: blue;
+    padding: 1rem;
     color: white;
     position: relative;
     width: 500px;

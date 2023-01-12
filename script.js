@@ -14,7 +14,13 @@
 
     // USING .then and .catch
     const getJoke = () =>{
-        fetch('https://api.chucknorris.io/jokes/random').then();
+        fetch('https://api.chucknorris.io/jokes/random').then(data =>{
+            return data.json();
+        }).then(joke => {
+            container.textContent = joke.value;
+        }).catch(error => {
+            console.log(error)
+        });
     }
 
     btn.addEventListener('click', getJoke);
